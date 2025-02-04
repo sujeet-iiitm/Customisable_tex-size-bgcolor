@@ -1,0 +1,82 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: all 0.5s ease;
+    border-top: 5px solid #333;
+    border-radius: 1.5%;
+}
+
+.color-buttons {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+.color-buttons button {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    transition: filter 0.5s ease;
+    border-radius: 50%;
+}
+
+.color-buttons button:hover {
+    filter: invert(100%);
+}
+
+.btn-red { background-color: red; }
+.btn-green { background-color: green; }
+.btn-blue { background-color: blue; }
+
+.font-buttons {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+
+.font-buttons button {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: hsl(190, 22%, 68%);
+}
+
+.btn-roboto:hover::after { content: 'Roboto'; }
+.btn-opensans:hover::after { content: 'Open Sans'; }
+.btn-montserrat:hover::after { content: 'Montserrat'; }
+
+.size-buttons {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.size-buttons button {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: hsl(190, 22%, 68%);
+
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+.font-small { font-size: calc(1rem - 5px); }
+.font-medium { font-size: 1rem; }
+.font-large { font-size: calc(1rem + 10px); }
